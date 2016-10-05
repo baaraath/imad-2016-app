@@ -4,33 +4,11 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-var article ={
-     title:'article-one|barath',
-     heading:'article one',
+var articleOne ={
+     title:'Article-One|barath',
+     heading:'Article One',
      date:'3rd oct 2016',
-     content:`<html>
- <head>
-    <title>
-        article one |barath
-        </title>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<link href="/ui/style.css" rel="stylesheet" />
-</head>
-<body>
-    <div>
-        <a href="/">home</a>
-    </div>
-<hr/>
-<h3>
-    article one
-</h3> 
-<div class="container">
-    
-
-<div>
-    3rd oct 2016
-</div>
-<div>
+     content:`
     <p>
      this is the content of the first article this is the content of the first article this is the content of the first articlethis is the content of the first article this is the content of the first article this is the content of the first article this is the content of the first article this is the content of the first article this is the content of the first article this is the content of the first articlethis is the content of the first article this is the content of the first article
 </p>
