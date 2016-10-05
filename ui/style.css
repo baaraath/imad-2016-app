@@ -20,8 +20,11 @@ body {
     height: 200px;
 }
 .container{
-            max-width:800px;
-            margin:0 auto;
-            color :yellow;
-            font-family:comic sans ms;
+            margin: 0 auto;
+    color: #8BC34A;
+    font-family: comic sans ms;
+    margin-bottom:1px;
+    padding-top :60px;
+    padding-left :20px;
+    padding-right :20px;
 }
