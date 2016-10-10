@@ -13,11 +13,7 @@ articleOne :{
     <p>
      this is the content of the first article this is the content of the first article this is the content of the first articlethis is the content of the first article this is the content of the first article this is the content of the first article this is the content of the first article this is the content of the first article this is the content of the first article this is the content of the first articlethis is the content of the first article this is the content of the first article
 </p>
- <p>
-     this is the content of the first article this is the content of the first article this is the content of the first articlethis is the content of the first article this is the content of the first article this is the content of the first article this is the content of the first article this is the content of the first article this is the content of the first article this is the content of the first articlethis is the content of the first article this is the content of the first article
-</p>
- <p>
-     this is the content of the first article this is the content of the first article this is the content of the first articlethis is the content of the first article this is the content of the first article this is the content of the first article this is the content of the first article this is the content of the first article this is the content of the first article this is the content of the first articlethis is the content of the first article this is the content of the first article
+ first articlethis is the content of the first article this is the content of the first article
 </p>
 </div>
 </div>
@@ -31,16 +27,17 @@ articleTwo :{ title:'Article-Two|barath',
      content:`
     <p>
      this is the content of the second article 
-</p>}
-articleThree ={ title:'Article-Three|barath',
+</p>`
+    
+},
+articleThree :{ title:'Article-Three|barath',
      heading:'Article Three',
      date:'3rd oct 2016',
-     content:
+     content:`
     <p>
      this is the content of the third article 
 </p>`
-    
-}
+}};    
 
 function createTemplate (data){
     var title = data.title;
@@ -48,18 +45,18 @@ function createTemplate (data){
     var heading = data.heading;
     var content = data.content;
 
-
-var htmlTemplate = 
+var htmlTemplate =` 
     <html>
  <head>
     <title>
          ${title}
      </title>
+
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <link href="/ui/style.css" rel="stylesheet" />
 </head>
 <body>
-    <div>
+    <div class="container">
         <a href="/">home</a>
     </div>
 <hr/>
@@ -81,9 +78,9 @@ var htmlTemplate =
 </div>
 </body>
 </html>
-
+`;
     return htmlTemplate;
-},
+}
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
