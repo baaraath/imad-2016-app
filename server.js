@@ -24,7 +24,6 @@ articleOne :{
 </body>
 </html>
 `
-     
 },
 articleTwo :{ title:'Article-Two|barath',
      heading:'Article Two',
@@ -39,7 +38,7 @@ articleThree ={ title:'Article-Three|barath',
      content:
     <p>
      this is the content of the third article 
-</p>
+</p>`
     
 }
 
@@ -55,7 +54,6 @@ var htmlTemplate =
  <head>
     <title>
          ${title}
-        
      </title>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <link href="/ui/style.css" rel="stylesheet" />
@@ -83,9 +81,9 @@ var htmlTemplate =
 </div>
 </body>
 </html>
-`
+
     return htmlTemplate;
-};
+},
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
