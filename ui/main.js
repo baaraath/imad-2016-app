@@ -9,6 +9,6 @@ var marginLeft=0;
      marginLeft=marginLeft+10;
     img.style.marginLeft=marginLeft+'px';
 }
-var interval=setInterval(moveRight, 100);
+var interval=setInterval(moveRight, 40);
     
 };
