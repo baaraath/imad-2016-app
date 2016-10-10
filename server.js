@@ -23,7 +23,7 @@ var articles={
 },
 'article-two' :{ title:'Article-Two|barath',
      heading:'Article Two',
-     date:'3rd oct 2016',
+     date:'13rd oct 2016',
      content:`
     <p>
      this is the content of the second article 
