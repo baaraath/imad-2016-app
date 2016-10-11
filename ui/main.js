@@ -1,14 +1,7 @@
-console.log('Loaded!');
-var element = document.getElementById('main-text');
-element.innerHTML= 'hello krishna';
-var img = document.getElementById('madi');
-img.onclick = function () {
-var marginLeft=0;
- function moveRight()
- {
-     marginLeft=marginLeft+10;
-    img.style.marginLeft=marginLeft+'px';
-}
-var interval=setInterval(moveRight, 40);
-    
+var counter=0;
+var counter=document.getElementById("counter");
+counter.onclick = function(){
+    counter=counter+1;
+    var span=document.getElementById("count");
+    span.innerHTML=counter.toString();
 };
