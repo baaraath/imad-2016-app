@@ -10,7 +10,7 @@ button.onclick = function(){
     span.innerHTML=counter.toString();
     }
 }; 
-request.open('GET',`baaraath.imad.hasura-app.io`,true);
+request.open('GET',`http://baaraath.imad.hasura-app.io`,true);
 request.send(null);
   
   };
