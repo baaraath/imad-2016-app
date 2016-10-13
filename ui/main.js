@@ -27,7 +27,7 @@ request.send(null);
       list == `<li>`+names[i]+`</li>`;
       
   }
-  ul.innerHTML=list;
+  ul.innerHTML=namelist;
   
   
    };
